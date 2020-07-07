@@ -1,1 +1,156 @@
-<mat-grid-list></mat-grid-list>
+<mat-grid-list cols="2" rowHeight="100" class="container">
+    <mat-grid-tile rowspan="1">
+        <h1>Chat Golang</h1>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="6">
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="5">
+        <div class="chat-content">
+            <div class="content">
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdassssssssssssssssssssssssssssssssbhasdh
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        dasdasdbvasjydasvdyasdgvasyugdyasgdyasugdyuasgdasyudgasygdyasgdasyudasgyudysagdyaus
+                    </mat-card-content>
+                </mat-card>
+                <mat-card class="card-message">
+                    <mat-card-title>
+                        Ciru
+                    </mat-card-title>
+                    <mat-card-content>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="user">
+        <textarea matInput placeholder="Mensaje"></textarea>
+        <button mat-raised-button color="primary" class="btnAction">Enviar</button>
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="!user; else haveSession">
+        <ng-container [ngSwitch]="flag">
+            <ng-container *ngSwitchCase="0">
+                <button mat-raised-button color="primary" (click)="showInvite()" class="btnAction">Entrar como invitado</button>
+                <button mat-raised-button color="primary" (click)="showLogin()" class="btnAction">Iniciar sesión</button>
+            </ng-container>
+            <ng-container *ngSwitchCase="1">
+                <mat-label>Nombre de usuario: </mat-label>
+                <input type="text" matInput [ngModel]="username" #usernameInvite="ngModel" required>
+                <button mat-raised-button color="primary" (click)="loginGuest()" class="btnAction" [disabled]="usernameInvite.invalid || usernameInvite.touched">Aceptar</button>
+                <button mat-raised-button color="primary" (click)="showButtons()" class="btnAction">Cancelar</button>
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+                <mat-label>Nombre de usuario: </mat-label>
+                <input type="text" matInput>
+                <mat-label>Contraseña: </mat-label>
+                <input type="password" matInput required>
+                <button mat-raised-button color="primary" class="btnAction">Iniciar sesión</button>
+                <button mat-raised-button color="primary" (click)="showButtons()" class="btnAction">Cancelar</button>
+            </ng-container>
+        </ng-container>
+    </mat-grid-tile>
+    <ng-template #haveSession>
+        <mat-grid-tile>
+            <button mat-raised-button color="primary">Cerrar sesión</button>
+        </mat-grid-tile>
+    </ng-template>
+</mat-grid-list>

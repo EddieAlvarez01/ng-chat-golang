@@ -2,3 +2,46 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+    margin: 8%;
+}
+
+.chat-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.content{
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.card-message{
+    width: 97.5%;
+    overflow: auto;
+    padding: 9px !important;
+    max-width: 100%;
+}
+
+.card-message mat-card-title{
+    color: red;
+    font-size: 15px;
+}
+
+.card-message mat-card-content{
+    margin-top: -8px;
+}
+
+.btnAction{
+    margin-left: 50px !important;
+}
+
+mat-grid-list textarea{
+    width: 80%;
+    height: 75%;
+}
