@@ -5,6 +5,7 @@ export class User{
         public role: Object,
         public username: string,
         public password: string,
-        public created_at: string
+        public created_at: string,
+        public socketId: string
     ){}
 }
